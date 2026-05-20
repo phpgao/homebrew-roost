@@ -1,23 +1,23 @@
-class Roost < Formula
+class Roost < Formula>
   desc "Interactive AI Session manager TUI for Claude, Gemini, Codex, Copilot, OpenCode"
   homepage "https://github.com/phpgao/roost"
-  version "0.2.3"
+  version "0.2.4"
 
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/phpgao/roost/releases/download/v#{version}/roost-darwin-arm64.tar.gz"
-      sha256 "b220e721526c1454561d03391d1e9879211c050040e75c644ca79036589be932"
+      sha256 "1674d5a65109063d1f0a60daf9522ae3ca3bf0a3f5bfde900392d5400d676ca7"
     else
       url "https://github.com/phpgao/roost/releases/download/v#{version}/roost-darwin-amd64.tar.gz"
-      sha256 "b1ff0b1c4a4decb93ca1f874fb17a76c43aa1e3dc10abc9adae40dd0cdd9959a"
+      sha256 "2359ebc1c94a22eee9f7e1ab557606c2c0bed147be7a42039f65bcad590ae005"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/phpgao/roost/releases/download/v#{version}/roost-linux-arm64.tar.gz"
-      sha256 "f7ece5efab594629e1da5d5eca10c4342a93b62b4ef28d20ba141e03d73fc870"
+      sha256 "d631b8f2465b71d0cf6091e1b1b3ba034cf79a2ac8db2bcccb2138a67bf29ebc"
     else
       url "https://github.com/phpgao/roost/releases/download/v#{version}/roost-linux-amd64.tar.gz"
-      sha256 "b67bb8c4519bcd845a5f84f3267434405f22c82af29514ba6c3d9c6d05d3a1eb"
+      sha256 "e1d9bfcfa6d28afea5251ac4f3a69c0408c9be1a8ee957536169b8fb50e304d9"
     end
   end
 
